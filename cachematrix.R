@@ -1,5 +1,10 @@
+## makeCacheMatrix could be utilized in many forms, but in the case of this function combination
+## it is used as an instance argument passed to cacheSolve to calculate the inverse of
+## an invertable matrix
 
 
+## makeCacheMatrix defines a "class" that takes a nuneric argument and returns the
+## set and get values outlined in the assignment.
 
 makeCacheMatrix <- function(x = numeric()) {
         m <- NULL
@@ -15,6 +20,10 @@ makeCacheMatrix <- function(x = numeric()) {
              getinverse = getinverse)
 }
 
+## cacheSolve takes x (in this case an instance of makeCacheMatrix) and returns
+## the inverse matrix. If the passed matrix is not invertable an error
+## will be thrown. 
+
 cacheSolve <- function(x, ...) {
         result <- x$getinverse()
         if(!is.null(result)) {
@@ -26,3 +35,9 @@ cacheSolve <- function(x, ...) {
         x$setinverse(result)
         result
 }
+
+
+
+
+
+
