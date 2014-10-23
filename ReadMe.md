@@ -4,6 +4,8 @@ https://class.coursera.org/getdata-008/human_grading/view/courses/972586/assessm
 Helpful tips on completing the assigmnment provided by David Hood at the link below:
 https://class.coursera.org/getdata-008/forum/thread?thread_id=24
 
+The dity data set is titled: run_analysis_std_mean_df_mean.txt
+
 Below are the actions in "psuedo code" in the run_analysis.R script:  
 1. Load the features meta data, train data and test data into R memory.  
 2. Create columns names based on the features.  
